@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zawody wędkarskie</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .header {
+            display: flex;
+        }
+
+
+        .left,
+        .right {
+            background-color: seagreen;
+            color: white;
+            line-height: 150px;
+            height: 260px;
+            font-size: 160%;
+        }
+
+        .left {
+            width: 75%;
+        }
+
+        .right {
+            width: 25%;
+            text-align: right;
+        }
+
+        .main {
+            background-color: mintcream;
+            padding: 80px;
+        }
+
+        .footer-main {
+            display: flex;
+        }
+
+        .footer {
+            background-color: seagreen;
+            color: white;
+            height: 70px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .img {
+            box-shadow: 15px 15px 10px dimgray;
+        }
+
+        .input {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <h1>Zawody polskich wędkarzy</h1>
+        </div>
+        <div class="right">
+            <img src="zawody.jpg" alt="wędkowanie" class="img">
+        </div>
+    </div>
+    <div class="main">
+        <h3>Łowiska</h3>
+        <ul>
+            <li>Zalew Węgrowski</li>
+            <li>Zbiornik Bukówka</li>
+            <li>Jeziorko Bartbetowskie</li>
+            <li>Warta-Obrzycko</li>
+        </ul>
+        <h3>Dodaj zawody wędkarskie</h3>
+        <form>
+            <label id="lowisko">Łowisko</label>
+            <input type="number" id="lowisko"> <br><br>
+            <label id="data">Data</label>
+            <input type="date" id="data"><br><br>
+            <label id="sedzia">Sędzia</label>
+            <input type="text" id="sedzia"><br><br>
+            <input type="reset" value="CZYŚĆ">
+            <input type="submit" value="DODAJ">
+        </form>
+    </div>
+    <div class="footer-main">
+        <div class="footer" id="stopka1">
+            <a href="kwerendy.txt">Pobierz</a>
+        </div>
+        <div class="footer" id="stopka2">Stronę przygotował: XYZ</div>
+    </div>
+
+</body>
+
+</html>
